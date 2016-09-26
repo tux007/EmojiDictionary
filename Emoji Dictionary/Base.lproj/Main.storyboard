@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZcL-bq-Zic">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZcL-bq-Zic">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -62,6 +62,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9D-ri-3qh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imP-Ar-TmH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -69,9 +79,15 @@
                             <constraint firstItem="8Zg-1e-tZK" firstAttribute="centerX" secondItem="QSa-4Q-r8V" secondAttribute="centerX" id="G7A-8c-D1E"/>
                             <constraint firstItem="xhm-hc-Bs7" firstAttribute="top" secondItem="exm-uJ-74H" secondAttribute="bottom" constant="40" id="NrA-RH-MvX"/>
                             <constraint firstItem="xhm-hc-Bs7" firstAttribute="centerX" secondItem="QSa-4Q-r8V" secondAttribute="centerX" id="OaP-Ob-NXf"/>
+                            <constraint firstItem="b9D-ri-3qh" firstAttribute="top" secondItem="8Zg-1e-tZK" secondAttribute="bottom" constant="20" id="Q3Z-L3-rwE"/>
+                            <constraint firstItem="imP-Ar-TmH" firstAttribute="top" secondItem="b9D-ri-3qh" secondAttribute="bottom" constant="20" id="cSR-CE-hNx"/>
+                            <constraint firstItem="b9D-ri-3qh" firstAttribute="centerX" secondItem="QSa-4Q-r8V" secondAttribute="centerX" id="oqK-AT-Rhj"/>
+                            <constraint firstItem="imP-Ar-TmH" firstAttribute="centerX" secondItem="QSa-4Q-r8V" secondAttribute="centerX" id="w9u-zb-89l"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="imP-Ar-TmH" id="aBU-L5-wHX"/>
+                        <outlet property="categoryLabel" destination="b9D-ri-3qh" id="ras-Sp-B7H"/>
                         <outlet property="definitionLabel" destination="8Zg-1e-tZK" id="kwg-Q2-Gr9"/>
                         <outlet property="emojiLabel" destination="xhm-hc-Bs7" id="4bu-AY-3mk"/>
                     </connections>
